@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="nav-bar" >
+  <a [routerLink]="['home']">Home</a>
+  <a [routerLink]="['storages']">Storages</a>
+  <a [routerLink]="['items']">Items</a>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
